@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            text-align: center;
+            font-family: arial;
+            margin-top: 100px;
+            background-color: aquamarine;
+
+        }
+
+        h1{
+            font-size: 50px;
+        }
+
+        #count{
+            font-size: 60px;
+            margin: 20px;
+        }
+
+        button{
+            padding: 20px 30px;
+            font-size: 20px;
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        #cadetblue{
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Count App</h1>
+    <div id="count">0</div>
+
+    <button onclick="addition()" id="cadetblue">+</button>
+    <button onclick="reset()">reset</button>
+    <button onclick="subtraction()" id="cadetblue">-</button>
+    
+    <script>
+
+        let count=0;
+
+        function addition(){
+            count++;
+            document.getElementById("count").innerText=count;
+        }
+
+        function repeat(){
+            count=0;
+            document.getElementById("count").innerText=count;
+        }
+
+        function subtraction(){
+            count-;
+            document.getElementById("count").innerText=count;
+        }
+
+        function CatchInput(){
+           // let inputid=document.getElementById("myinput").value;
+           let inputId = document.getElementById("myinput").value;
+            console.log(inputId);
+        }
+        
+    </script>
+    
+</body>
+</html>
